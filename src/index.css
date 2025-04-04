@@ -1,0 +1,43 @@
+:root {
+  /* Dark theme */
+  /** Base colors */
+  --clr-dark-a0: #000000;
+  --clr-light-a0: #ffffff;
+
+  /** Theme primary colors */
+  --clr-primary-a0: #8756d6;
+  --clr-primary-a10: #9668db;
+  --clr-primary-a20: #a47be0;
+  --clr-primary-a30: #b28de5;
+  --clr-primary-a40: #c0a0ea;
+  --clr-primary-a50: #cdb2ee;
+
+  /** Theme surface colors */
+  --clr-surface-a0: #121212;
+  --clr-surface-a10: #282828;
+  --clr-surface-a20: #3f3f3f;
+  --clr-surface-a30: #575757;
+  --clr-surface-a40: #717171;
+  --clr-surface-a50: #8b8b8b;
+
+  /** Theme tonal surface colors */
+  --clr-surface-tonal-a0: #1d1923;
+  --clr-surface-tonal-a10: #322e38;
+  --clr-surface-tonal-a20: #48444d;
+  --clr-surface-tonal-a30: #605c64;
+  --clr-surface-tonal-a40: #78757c;
+  --clr-surface-tonal-a50: #928f95;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--clr-light-a0);
+  background-color: var(--clr-surface-tonal-a0);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
