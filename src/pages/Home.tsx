@@ -1,5 +1,7 @@
 import ProjectItem from '../components/ProjectItem';
+import ScrollingBackground from '../components/ScrollingBackground';
 import { ProjectItemProps } from '../types';
+import './Home.css';
 
 const Home: React.FC = () => {
   const featuredProjects: ProjectItemProps[] = [
@@ -35,12 +37,21 @@ const Home: React.FC = () => {
 
   return (
     <div className="home-page">
+      <ScrollingBackground 
+        images={{
+          top: '/backgrounds/top-bg.jpg',
+          middle: '/backgrounds/middle-bg.jpg',
+          bottom: '/backgrounds/bottom-bg.jpg'
+        }}
+      />
       <div className="home-content">
-        <h2>Featured Projects</h2>
-        <div className="project-grid">
-          {featuredProjects.map((project, index) => (
-            <ProjectItem key={index} {...project} />
-          ))}
+        <div className="content-overlay">
+          <h2>Featured Projects</h2>
+          <div className="project-grid">
+            {featuredProjects.map((project, index) => (
+              <ProjectItem key={index} {...project} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

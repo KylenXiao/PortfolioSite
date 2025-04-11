@@ -1,9 +1,12 @@
-export interface ArtworkProps {
-  color?: string;
-  speed?: number;
-  topImg: CanvasImageSource;
-  middleImg: CanvasImageSource;
-  bottomImg: CanvasImageSource;
+export interface BackgroundImages {
+  top: string;
+  middle: string;
+  bottom: string;
+}
+
+export interface ScrollingBackgroundProps {
+  images: BackgroundImages;
+  className?: string;
 }
 
 export interface MediaProps {
