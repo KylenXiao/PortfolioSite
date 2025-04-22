@@ -23,8 +23,11 @@ function Navbar() {
         
         <ul className="nav-links">
           <li><Link to="/" onClick={toggleNav}>Home</Link></li>
+          <li><Link to="/software" onClick={toggleNav}>Software Engineering</Link></li>
+          <li><Link to="/ml" onClick={toggleNav}>Machine Learning</Link></li>
+          <li><Link to="/gamedev" onClick={toggleNav}>Game Dev</Link></li>
+          <li><Link to="/art" onClick={toggleNav}>Art Gallery</Link></li>
           <li><Link to="/about" onClick={toggleNav}>About</Link></li>
-          <li><Link to="/projects" onClick={toggleNav}>Projects</Link></li>
         </ul>
       </nav>
       
