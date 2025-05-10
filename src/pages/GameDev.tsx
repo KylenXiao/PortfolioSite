@@ -25,9 +25,9 @@ function GameDev() {
     <div className="page">
       <ScrollingBackground 
         images={{
-          top: '/backgrounds/top-bg.jpg',
-          middle: '/backgrounds/middle-bg.jpg',
-          bottom: '/backgrounds/bottom-bg.jpg'
+          top: '/backgrounds/PixTop.png',
+          middle: '/backgrounds/PixMid.png',
+          bottom: '/backgrounds/PixBtm.png'
         }}
       />
       <div className="content">
