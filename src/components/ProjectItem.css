@@ -2,13 +2,26 @@
   display: flex;
   margin: 3rem 0;
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  background-color: var(--clr-surface-tonal-a0);
+  position: relative;
   transition: transform 0.2s ease-in-out;
 }
 
+.project-item::before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 50px;
+  top: -25px;
+  left: -25px;
+  right: -25px;
+  bottom: -25px;
+  border-image: var(--background-image) 33% fill stretch;
+  pointer-events: none;
+}
+
 .project-item:hover {
-  transform: translateY(-5px);
+  transform: scale(1.02);
 }
 
 .project-content-wrapper {

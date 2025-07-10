@@ -18,16 +18,16 @@ function GameDev() {
       link: "https://example.com/game-project",
       github: "https://github.com/username/game-project",
     },
-    // Add more game development projects here
+    // TODO
   ];
 
   return (
     <div className="page">
       <ScrollingBackground 
         images={{
-          top: '/backgrounds/PixTop.png',
-          middle: '/backgrounds/PixMid.png',
-          bottom: '/backgrounds/PixBtm.png'
+          top: '/src/assets/backgrounds/PixTop.png',
+          middle: '/src/assets/backgrounds/PixMid.png',
+          bottom: '/src/assets/backgrounds/PixBtm.png'
         }}
       />
       <div className="content">

@@ -27,4 +27,5 @@ export interface ProjectItemProps {
   mediaPosition?: 'left' | 'right';
   link?: string;
   github?: string;
+  backgroundImage?: string;
 }

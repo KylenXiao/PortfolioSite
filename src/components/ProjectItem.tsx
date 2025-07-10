@@ -10,10 +10,14 @@ function ProjectItem({
   media,
   mediaPosition = 'left',
   link,
-  github
+  github,
+  backgroundImage
 }: ProjectItemProps) {
   return (
-    <div className={`project-item media-${mediaPosition}`}>
+    <div 
+      className={`project-item media-${mediaPosition}`}
+      style={backgroundImage ? { '--background-image': `url(${backgroundImage})` } as React.CSSProperties : undefined}>
+
       <div className="project-content-wrapper">
         {media && (
           <div className="project-media-container">

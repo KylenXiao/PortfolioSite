@@ -9,7 +9,7 @@ interface ProjectListProps {
 function ProjectList({ title, projects }: ProjectListProps) {
   return (
     <div className="project-list">
-      <h2>{title}</h2>
+      <h1>{title}</h1>
       <div className="project-grid">
         {projects.map((project, index) => (
           <ProjectItem key={index} {...project} />

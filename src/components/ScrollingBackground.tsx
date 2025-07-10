@@ -16,7 +16,7 @@ function ScrollingBackground({
     loaded: boolean;
   }>({ top: null, middle: null, bottom: null, loaded: false });
 
-  // Function to get the full document height
+  // Gets the full document height
   const getDocumentHeight = () => {
     return Math.max(
       document.body.scrollHeight,
@@ -28,7 +28,7 @@ function ScrollingBackground({
     );
   };
 
-  // Handle scroll events
+  // Handles scroll
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
@@ -38,13 +38,13 @@ function ScrollingBackground({
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Update page height on mount and resize
+  // Update page height
   useEffect(() => {
     const updatePageHeight = () => {
       setPageHeight(getDocumentHeight());
     };
 
-    // Initial height calculation (with a slight delay to ensure all content is rendered)
+    // Set height
     setTimeout(updatePageHeight, 100);
     
     // Update on resize
@@ -86,7 +86,7 @@ function ScrollingBackground({
     loadImages();
   }, [images]);
 
-  // Draw the canvas whenever scroll position, page height, or images change
+  // Draw canvas
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas || pageHeight === 0 || !imagesRef.current.loaded) return;
@@ -94,15 +94,15 @@ function ScrollingBackground({
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Set canvas size to match window width and full page height
+    // Set canvas size
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight; // Only need to render what's visible
+    canvas.height = window.innerHeight;
 
-    // Get the loaded images
+    // Get images
     const { top: topImg, middle: middleImg, bottom: bottomImg } = imagesRef.current;
     if (!topImg || !middleImg || !bottomImg) return;
 
-    // Calculate dimensions
+    // Calculate scale
     const scale = canvas.width / topImg.width;
 
     // Set vars
@@ -116,27 +116,27 @@ function ScrollingBackground({
     // Clear canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Calculate the offset for parallax effect
+    // Calculate parallax offset
     const parallaxMultiplier = 1;
     const parallaxOffset = scrollY * parallaxMultiplier;
 
-    // Draw top image (fixed at the top)
+    // Draw top image
     ctx.drawImage(topImg, 0, -parallaxOffset, tw, th);
 
-    // Draw middle section with parallax effect
+    // Draw middle with parallax
     const visibleMiddleHeight = pageHeight - th - bh;
     const middleNum = Math.ceil(visibleMiddleHeight / mh);
     const tileHeight = (visibleMiddleHeight / middleNum);
     
     for (let i = 0; i < middleNum; i++) {
       const yPos = th + i * (tileHeight) - parallaxOffset;
-      // Only draw if it's in the visible area (with some buffer)
+      // Draw if visible
       if (yPos > -mh && yPos < canvas.height) {
         ctx.drawImage(middleImg, 0, yPos, mw, tileHeight);
       }
     }
 
-    // Draw bottom image (fixed at the bottom of the page)
+    // Draw bottom image
     const bottomPosition = pageHeight - bh - parallaxOffset;
     if (bottomPosition < canvas.height + bh && bottomPosition > -bh) {
       ctx.drawImage(bottomImg, 0, bottomPosition, bw, bh);

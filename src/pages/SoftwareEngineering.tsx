@@ -3,48 +3,62 @@ import ProjectList from '../components/ProjectList';
 import { ProjectItemProps } from '../types';
 
 function SoftwareEngineering() {
+  const borderImage = "/src/assets/backgrounds/border.png";
   const projects: ProjectItemProps[] = [
     {
-      title: "Web Development Project",
-      subtitle: "Full-stack Development",
-      description: "A modern web application built with React and Node.js",
-      technologies: ["React", "TypeScript", "Node.js", "Express"],
+      title: "TuneTalker",
+      subtitle: "2024-2025",
+      description: "A fully-functional music-focused social media and recommendation platform. Built in a group of four talented developers as a senior capstone project.",
+      technologies: ["React", "TypeScript", ".NET", "MySQL", "AWS", "Gitlab", "APIs"],
       media: {
         type: "image",
         src: "https://brandingforthepeople.com/wp-content/uploads/2019/04/Stock-Photography-vs-Real-Imagery.jpg",
-        alt: "Web Project",
+        alt: "TuneTalker Project",
       },
       mediaPosition: "left",
-      link: "https://example.com/web-project",
-      github: "https://github.com/username/web-project",
+      backgroundImage: borderImage,
     },
     {
-      title: "Project One",
-      subtitle: "A subtitle",
-      description: "A brief description of your amazing project. Lorem ipsum blah blah blah blah blah blah",
-      technologies: ["React", "TypeScript", "Canvas API"],
+      title: "Self-Hosting Experimentation",
+      subtitle: "2024-Present",
+      description: "A Proxmox server running various applications on virtual machines, linked together with a reverse proxy and authentication.",
+      technologies: ["Proxmox", "VirtualBox", "Nginx", "Docker", "Docker Compose", "Github Actions CI/CD", "Authentik", "Gitea"],
       media: {
         type: "image",
-        src: "https://brandingforthepeople.com/wp-content/uploads/2019/04/Stock-Photography-vs-Real-Imagery.jpg",
-        alt: "Project media",
-      },
-      mediaPosition: "left",
-      link: "https://example.com/project-one",
-      github: "https://github.com/username/project-one",
-    },
-    {
-      title: "Project Two",
-      subtitle: "A subtitle",
-      description: "A brief description of your amazing project",
-      technologies: ["React", "TypeScript", "Canvas API"],
-      media: {
-        type: "image",
-        src: "https://brandingforthepeople.com/wp-content/uploads/2019/04/Stock-Photography-vs-Real-Imagery.jpg",
+        src: "/src/assets/images/proxmox.png",
         alt: "Project media",
       },
       mediaPosition: "right",
-      link: "https://example.com/project-two",
-      github: "https://github.com/username/project-two",
+      backgroundImage: borderImage,
+      link: "https://lookslikeivelost.xyz/",
+    },
+    {
+      title: "Pepper Flakes",
+      subtitle: "2025",
+      description: "A chat bot which uses character descriptions and OpenAI API to impersonate characters, with text and voice functionality.",
+      technologies: ["OpenAI API", "Google Speech-to-Text", "ElevenLabs", "Python", "Docker Compose", "NodeJS", "npm", "PostgreSQL", "DiscordJS"],
+      mediaPosition: "left",
+      backgroundImage: borderImage,
+      github: "https://github.com/LooksLikeIveLost/PepperFlakes",
+    },
+    {
+      title: "Portfolio Site",
+      subtitle: "2025",
+      description: "A portfolio website built with React and TypeScript.",
+      technologies: ["React", "TypeScript"],
+      mediaPosition: "left",
+      backgroundImage: borderImage,
+      link: "https://portfolio.lookslikeivelost.xyz/",
+      github: "https://github.com/KylenXiao/PortfolioSite",
+    },
+    {
+      title: "Bingo Bot",
+      subtitle: "2024",
+      description: "A program that captures regions of the screen to read bingo numbers and marks cards in a virtual bingo game.",
+      technologies: ["Python", "EasyOCR", "pyautogui"],
+      mediaPosition: "left",
+      backgroundImage: borderImage,
+      github: "https://github.com/LooksLikeIveLost/BingoBot",
     },
   ];
 
@@ -52,9 +66,9 @@ function SoftwareEngineering() {
     <div className="page">
       <ScrollingBackground 
         images={{
-          top: '/backgrounds/PixTop.png',
-          middle: '/backgrounds/PixMid.png',
-          bottom: '/backgrounds/PixBtm.png'
+          top: '/src/assets/backgrounds/PixTop.png',
+          middle: '/src/assets/backgrounds/PixMid.png',
+          bottom: '/src/assets/backgrounds/PixBtm.png'
         }}
       />
       <div className="content">

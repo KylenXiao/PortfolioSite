@@ -39,9 +39,9 @@ function Home() {
     <div className="page">
       <ScrollingBackground 
         images={{
-          top: '/backgrounds/PixTop.png',
-          middle: '/backgrounds/PixMid.png',
-          bottom: '/backgrounds/PixBtm.png'
+          top: '/src/assets/backgrounds/PixTop.png',
+          middle: '/src/assets/backgrounds/PixMid.png',
+          bottom: '/src/assets/backgrounds/PixBtm.png'
         }}
       />
       <div className="content">
