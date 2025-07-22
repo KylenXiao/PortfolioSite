@@ -15,7 +15,7 @@ function ProjectItem({
 }: ProjectItemProps) {
   return (
     <div 
-      className={`project-item media-${mediaPosition}`}
+      className={`project-item media-${mediaPosition} ${backgroundImage ? 'project-item-border' : 'project-item-rounded'}`}
       style={backgroundImage ? { '--background-image': `url(${backgroundImage})` } as React.CSSProperties : undefined}>
 
       <div className="project-content-wrapper">

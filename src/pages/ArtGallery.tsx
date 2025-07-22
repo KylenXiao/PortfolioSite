@@ -3,22 +3,9 @@ import ProjectList from '../components/ProjectList';
 import { ProjectItemProps } from '../types';
 
 function ArtGallery() {
+  const borderImage = "";
   const projects: ProjectItemProps[] = [
-    {
-      title: "Digital Art Collection",
-      subtitle: "Digital Painting",
-      description: "A collection of digital paintings and illustrations",
-      technologies: ["Photoshop", "Procreate", "Illustrator"],
-      media: {
-        type: "image",
-        src: "https://example.com/art-project.jpg",
-        alt: "Art Project",
-      },
-      mediaPosition: "left",
-      link: "https://example.com/art-gallery",
-      github: undefined,
-    },
-    // TODO
+    
   ];
 
   return (

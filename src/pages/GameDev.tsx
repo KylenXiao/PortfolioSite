@@ -3,6 +3,7 @@ import ProjectList from '../components/ProjectList';
 import { ProjectItemProps } from '../types';
 
 function GameDev() {
+  const borderImage = "";
   const projects: ProjectItemProps[] = [
     {
       title: "Unity Game Project",
@@ -15,6 +16,7 @@ function GameDev() {
         alt: "Game Project",
       },
       mediaPosition: "left",
+      backgroundImage: borderImage,
       link: "https://example.com/game-project",
       github: "https://github.com/username/game-project",
     },

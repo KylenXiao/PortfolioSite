@@ -26,7 +26,6 @@ function Navbar() {
           <li><Link to="/software" onClick={toggleNav}>Software Engineering</Link></li>
           <li><Link to="/ml" onClick={toggleNav}>Machine Learning</Link></li>
           <li><Link to="/gamedev" onClick={toggleNav}>Game Dev</Link></li>
-          <li><Link to="/art" onClick={toggleNav}>Art Gallery</Link></li>
         </ul>
       </nav>
       

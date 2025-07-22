@@ -3,7 +3,7 @@ import ProjectList from '../components/ProjectList';
 import { ProjectItemProps } from '../types';
 
 function SoftwareEngineering() {
-  const borderImage = "/src/assets/backgrounds/border.png";
+  const borderImage = "";
   const projects: ProjectItemProps[] = [
     {
       title: "TuneTalker",
@@ -11,8 +11,8 @@ function SoftwareEngineering() {
       description: "A fully-functional music-focused social media and recommendation platform. Built in a group of four talented developers as a senior capstone project.",
       technologies: ["React", "TypeScript", ".NET", "MySQL", "AWS", "Gitlab", "APIs"],
       media: {
-        type: "image",
-        src: "https://brandingforthepeople.com/wp-content/uploads/2019/04/Stock-Photography-vs-Real-Imagery.jpg",
+        type: "gif",
+        src: "/src/assets/images/Tunetalker.gif",
         alt: "TuneTalker Project",
       },
       mediaPosition: "left",

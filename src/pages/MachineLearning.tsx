@@ -3,7 +3,7 @@ import ProjectList from '../components/ProjectList';
 import { ProjectItemProps } from '../types';
 
 function MachineLearning() {
-  const borderImage = "/src/assets/backgrounds/border.png";
+  const borderImage = "";
   const projects: ProjectItemProps[] = [
     {
       title: "Puyo RL",
