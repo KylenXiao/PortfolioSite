@@ -6,19 +6,17 @@ function GameDev() {
   const borderImage = "";
   const projects: ProjectItemProps[] = [
     {
-      title: "Unity Game Project",
-      subtitle: "3D Game Development",
-      description: "A 3D adventure game built with Unity",
-      technologies: ["Unity", "C#", "Blender", "FMOD"],
+      title: "Armsim",
+      subtitle: "2019-2025",
+      description: "A 2D platformer-puzzle game where you use your arm to navigate and interact with a physics-based world.",
+      technologies: ["Gamemaker Studio 1.4", "Blender", "Reaper", "Audacity"],
       media: {
-        type: "image",
-        src: "https://example.com/game-project.jpg",
-        alt: "Game Project",
+        type: "video",
+        src: "/src/assets/videos/Armsim.mp4",
+        alt: "Armsim Clipshow",
       },
       mediaPosition: "left",
       backgroundImage: borderImage,
-      link: "https://example.com/game-project",
-      github: "https://github.com/username/game-project",
     },
     // TODO
   ];
