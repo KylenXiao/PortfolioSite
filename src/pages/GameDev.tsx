@@ -18,7 +18,19 @@ function GameDev() {
       mediaPosition: "left",
       backgroundImage: borderImage,
     },
-    // TODO
+    {
+      title: "DotCO",
+      subtitle: "2018-2019",
+      description: "A game where you have to manage a company by creating products, funding research, managing employees, completing contracts, and adapting to positive or negative events.",
+      technologies: ["Gamemaker Studio 1.4"],
+      media: {
+        type: "video",
+        src: "/src/assets/videos/DotCO.mp4",
+        alt: "DotCO Clipshow",
+      },
+      mediaPosition: "right",
+      backgroundImage: borderImage,
+    }
   ];
 
   return (
