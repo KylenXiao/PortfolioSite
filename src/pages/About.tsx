@@ -12,7 +12,7 @@ function About() {
         <div className="about-profile">
           <div className="portrait-container">
             <img 
-              src="/src/assets/images/headshot.png" 
+              src="/images/headshot.png" 
               alt="Kylen Xiao" 
               className="portrait-image" 
             />

@@ -12,7 +12,7 @@ function SoftwareEngineering() {
       technologies: ["React", "TypeScript", ".NET", "MySQL", "AWS", "Gitlab", "APIs"],
       media: {
         type: "gif",
-        src: "/src/assets/images/Tunetalker.gif",
+        src: "/images/Tunetalker.gif",
         alt: "TuneTalker Project",
       },
       mediaPosition: "left",
@@ -25,7 +25,7 @@ function SoftwareEngineering() {
       technologies: ["Proxmox", "VirtualBox", "Nginx", "Docker", "Docker Compose", "Github Actions CI/CD", "Authentik", "Gitea"],
       media: {
         type: "image",
-        src: "/src/assets/images/proxmox.png",
+        src: "/images/proxmox.png",
         alt: "Project media",
       },
       mediaPosition: "right",
@@ -66,9 +66,9 @@ function SoftwareEngineering() {
     <div className="page">
       <ScrollingBackground 
         images={{
-          top: '/src/assets/backgrounds/PixTop.png',
-          middle: '/src/assets/backgrounds/PixMid.png',
-          bottom: '/src/assets/backgrounds/PixBtm.png'
+          top: '/backgrounds/PixTop.png',
+          middle: '/backgrounds/PixMid.png',
+          bottom: '/backgrounds/PixBtm.png'
         }}
       />
       <div className="content">

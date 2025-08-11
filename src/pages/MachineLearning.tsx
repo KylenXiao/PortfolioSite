@@ -12,7 +12,7 @@ function MachineLearning() {
       technologies: ["Python", "OpenAI Gym", "Stable Baselines3", "PPO", "DQN"],
       media: {
         type: "gif",
-        src: "/src/assets/images/PuyoRL.gif",
+        src: "/images/PuyoRL.gif",
         alt: "Puyo RL Project",
       },
       mediaPosition: "left",
@@ -34,9 +34,9 @@ function MachineLearning() {
     <div className="page">
       <ScrollingBackground 
         images={{
-          top: '/src/assets/backgrounds/PixTop.png',
-          middle: '/src/assets/backgrounds/PixMid.png',
-          bottom: '/src/assets/backgrounds/PixBtm.png'
+          top: '/backgrounds/PixTop.png',
+          middle: '/backgrounds/PixMid.png',
+          bottom: '/backgrounds/PixBtm.png'
         }}
       />
       <div className="content">

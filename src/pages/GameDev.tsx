@@ -12,7 +12,7 @@ function GameDev() {
       technologies: ["Gamemaker Studio 1.4", "Blender", "Reaper", "Audacity"],
       media: {
         type: "video",
-        src: "/src/assets/videos/Armsim.mp4",
+        src: "/videos/Armsim.mp4",
         alt: "Armsim Clipshow",
       },
       mediaPosition: "left",
@@ -25,7 +25,7 @@ function GameDev() {
       technologies: ["Gamemaker Studio 1.4"],
       media: {
         type: "video",
-        src: "/src/assets/videos/DotCO.mp4",
+        src: "/videos/DotCO.mp4",
         alt: "DotCO Clipshow",
       },
       mediaPosition: "right",
@@ -37,9 +37,9 @@ function GameDev() {
     <div className="page">
       <ScrollingBackground 
         images={{
-          top: '/src/assets/backgrounds/PixTop.png',
-          middle: '/src/assets/backgrounds/PixMid.png',
-          bottom: '/src/assets/backgrounds/PixBtm.png'
+          top: '/backgrounds/PixTop.png',
+          middle: '/backgrounds/PixMid.png',
+          bottom: '/backgrounds/PixBtm.png'
         }}
       />
       <div className="content">
