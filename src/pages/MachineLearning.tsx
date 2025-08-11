@@ -8,11 +8,11 @@ function MachineLearning() {
     {
       title: "Puyo RL",
       subtitle: "2024",
-      description: "A reinforcement learning agent trained to play games of Puyo Puyo.",
+      description: "A reinforcement learning agent trained to play simple games of Puyo Puyo.",
       technologies: ["Python", "OpenAI Gym", "Stable Baselines3", "PPO", "DQN"],
       media: {
         type: "gif",
-        src: "https://example.com/puyo-rl.gif",
+        src: "/src/assets/images/PuyoRL.gif",
         alt: "Puyo RL Project",
       },
       mediaPosition: "left",
