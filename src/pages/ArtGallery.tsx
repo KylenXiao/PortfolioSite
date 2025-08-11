@@ -3,7 +3,6 @@ import ProjectList from '../components/ProjectList';
 import { ProjectItemProps } from '../types';
 
 function ArtGallery() {
-  const borderImage = "";
   const projects: ProjectItemProps[] = [
     
   ];
